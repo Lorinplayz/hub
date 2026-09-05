@@ -26,6 +26,8 @@ names=(
 "adminauditlogs.blueprint" "huxregister.blueprint" "loader.blueprint" 
 "lyrdyannounce.blueprint" "mclogs.blueprint" "mcplugins.blueprint"
 "mctools.blueprint" "minecraftplayermanager.blueprint" "playerlisting.blueprint" 
+"resourcealerts.blueprint" "resourcemanager.blueprint" "serverbackgrounds.blueprint"
+"serversplitter.blueprint" "simplefavicons.blueprint" "snowflakes.blueprint" 
 "sociallogin.blueprint" "startupchanger.blueprint" "subdomains.blueprint"
 "tawkto.blueprint" "versionchanger.blueprint" "pteromonaco.blueprint" 
 "urldownloader.blueprint" "consolelogs.blueprint" "laravellogs.blueprint"
@@ -35,8 +37,14 @@ names=(
 "sidebar.blueprint" "translations.blueprint" "monacoeditor.blueprint"
 "minecraftpluginmanager.blueprint" "subdomainmanager.blueprint" "serverimporter.blueprint" 
 "pstatistics.blueprint" "pullfiles.blueprint" "serverpropsmanager.blueprint" 
-"motdmaker.blueprint" "servericonimporter.blueprint" 
-"eggchanger.blueprint" "mysqlautobackup.blueprint" "configeditor.blueprint" "customserversort.blueprint" "databaseimportexport.blueprint")
+"motdmaker.blueprint" "servericonimporter.blueprint" "sagaautosuspension.blueprint"
+"sagaminecraftmodpackinstaller.blueprint" "blueannoucements.blueprint" "trashbin.blueprint" 
+"eggchanger.blueprint" "mysqlautobackup.blueprint" "configeditor.blueprint" "customserversort.blueprint" "databaseimportexport.blueprint"
+"minecraftmodmanager.blueprint" "serverid.blueprint" "stats.blueprint" "vminfo.blueprint" "customcss.blueprint" "autobackups.blueprint" "node.blueprint" "mcp.blueprint"
+"mcplayer.blueprint" "pterodactylramburst.blueprint"
+"pterodactylpanelban.blueprint"
+"pterodactylcpuburst.blueprint"
+)
 
 # ==========================================
 # 🔍 HELPERS
@@ -95,7 +103,7 @@ show_menu() {
 
     # Add a newline if list ends on an odd number
     [[ $((count % 2)) -ne 0 ]] && echo ""
-    echo -e "${M}              ⚡ Powered by Lorin Spicy ⚡${N}"
+
     echo -e "${C} ──────────────────────────────────────────────────────────${N}"
     echo -e " ${BW}SELECTED:${N} ${BY}${#selected_indices[@]}${N} items"
     echo -e " ${BG}[i]${N} Install  ${BR}[r]${N} Remove  ${BM}[a]${N} Select All  ${BC}[c]${N} Clear  ${R}[0]${N} Exit"
