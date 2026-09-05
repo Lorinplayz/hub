@@ -95,7 +95,7 @@ show_menu() {
 
     # Add a newline if list ends on an odd number
     [[ $((count % 2)) -ne 0 ]] && echo ""
-
+    echo -e "${M}              ⚡ Powered by Lorin Spicy ⚡${N}"
     echo -e "${C} ──────────────────────────────────────────────────────────${N}"
     echo -e " ${BW}SELECTED:${N} ${BY}${#selected_indices[@]}${N} items"
     echo -e " ${BG}[i]${N} Install  ${BR}[r]${N} Remove  ${BM}[a]${N} Select All  ${BC}[c]${N} Clear  ${R}[0]${N} Exit"
