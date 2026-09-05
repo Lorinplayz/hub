@@ -69,10 +69,10 @@ get_title() { echo 'ICAgICAg44CCIOKAjCDigJMgTm9iaXRhLmRldiBDT05UUk9MIEhVQiDigJMg
 # 📋 MENU
 # ==========================================
 show_menu() {
-    clear
-    echo -e "${BC} ╔══════════════════════════════════════════════════════════╗${N}"
-    printf " ${BC} ║               "$(LorinSpic Control Hub)"
-    echo -e "${BC} ╚══════════════════════════════════════════════════════════╝${N}"
+clear
+echo -e "${BC} ╔══════════════════════════════════════════════════════════╗${N}"
+printf "${BC}  ║                LorinSpicy Control Hub                    ║${N}\n"
+echo -e "${BC} ╚══════════════════════════════════════════════════════════╝${N}"
     
     local count=0
     for i in "${!names[@]}"; do
